@@ -1,0 +1,2 @@
+SELECT *, 
+(CASE fam_par WHEN 0 THEN 'No' WHEN 1 THEN 'Si' END)AS fam_par_des from familias_pro where borrado='0' and 1=1 ORDER BY fam_des ASC

@@ -1,0 +1,1 @@
+SELECT * FROM niveles WHERE borrado=0 AND 1=1 ORDER BY niv_cod ASC

@@ -1,0 +1,1 @@
+SELECT * from factura_cab_view where borrado='0' and 1=1 AND tie_cod='2' ORDER BY fac_cod desc

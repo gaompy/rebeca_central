@@ -1,0 +1,2 @@
+[02-May-2016 15:34:16 CST6CDT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/micanje/public_html/site-admin/info/guardar.php:18) in /home/micanje/public_html/site-admin/info/guardar.php on line 45
+[02-May-2016 15:35:18 CST6CDT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/micanje/public_html/site-admin/info/guardar.php:18) in /home/micanje/public_html/site-admin/info/guardar.php on line 45

@@ -1,0 +1,1 @@
+SELECT * from sucursales where borrado='0' and 1=1 ORDER BY suc_des ASC

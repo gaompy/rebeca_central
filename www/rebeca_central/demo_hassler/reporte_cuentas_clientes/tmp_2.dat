@@ -1,0 +1,1 @@
+SELECT * from factura_cab_view where borrado='0' and 1=1 AND for_cod='2' AND fecha >='2016-09-01' AND fecha <='2019-09-16' ORDER BY fac_cod desc

@@ -1,0 +1,2 @@
+[04-Sep-2017 16:38:46 CST6CDT] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/alemaniasys/public_html/presupuestos/rejilla.php on line 33
+[09-Dec-2017 14:25:00 CST6CDT] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/alemaniasys/public_html/presupuestos/rejilla.php on line 33

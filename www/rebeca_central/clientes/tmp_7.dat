@@ -1,0 +1,3 @@
+SELECT *, 
+            (CASE cli_par WHEN 0 THEN 'No' WHEN 1 THEN 'Si' END)AS cli_par_des  
+            from clientes_view where borrado='0' and 1=1 AND cli_des like '%I%' ORDER BY cli_des ASC

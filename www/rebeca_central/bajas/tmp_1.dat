@@ -1,0 +1,1 @@
+SELECT * from bajas_view where borrado='0' and 1=1 ORDER BY prd_cod desc

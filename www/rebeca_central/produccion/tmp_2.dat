@@ -1,0 +1,1 @@
+SELECT * from produccion_view where borrado='0' and 1=1 AND par_cod='2' ORDER BY prd_cod desc

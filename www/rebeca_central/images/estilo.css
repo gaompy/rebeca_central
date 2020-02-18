@@ -1,0 +1,42 @@
+.camporegistro {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+}
+
+
+.titulo {
+	background-color: #FFCC99;
+}
+.error {
+	color: #FF0000;
+}
+th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #CCFFCC;
+	border: none;
+
+}
+td {
+	font-family: "Comic Sans MS";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	background-color: #CCCCCC;
+}
+a:link {
+	text-decoration: none;
+
+
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: none;
+}

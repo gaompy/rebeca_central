@@ -1,0 +1,35 @@
+SELECT *, REPLACE(FORMAT(fac_tot-fac_imp,0),',','.') AS total_gral, 
+(SELECT SUM(impuesto) AS total 
+FROM compra_det_view WHERE fac_cod=compra_cab_view.fac_cod AND iva=10
+GROUP BY fac_cod) AS iva_10,
+
+REPLACE(FORMAT((SELECT SUM(impuesto) AS total 
+FROM compra_det_view WHERE fac_cod=compra_cab_view.fac_cod AND iva=10
+GROUP BY fac_cod),0),',','.') AS iva_10_formato,
+
+(SELECT SUM(impuesto) AS total 
+FROM compra_det_view WHERE fac_cod=compra_cab_view.fac_cod AND iva=5
+GROUP BY fac_cod) AS iva_5,
+REPLACE(FORMAT((SELECT SUM(impuesto) AS total 
+FROM compra_det_view WHERE fac_cod=compra_cab_view.fac_cod AND iva=5
+GROUP BY fac_cod),0),',','.') AS iva_5_formato,
+
+(SELECT SUM(impuesto) AS total 
+FROM compra_det_view WHERE fac_cod=compra_cab_view.fac_cod AND iva=0
+GROUP BY fac_cod) AS excento,
+
+REPLACE(FORMAT((SELECT SUM(impuesto) AS total 
+FROM compra_det_view WHERE fac_cod=compra_cab_view.fac_cod AND iva=0
+GROUP BY fac_cod),0),',','.') AS excento_formato,
+
+(SELECT SUM(impuesto) AS total 
+FROM compra_det_view WHERE fac_cod=compra_cab_view.fac_cod
+GROUP BY fac_cod) AS total_iva,
+
+REPLACE(FORMAT((SELECT SUM(impuesto) AS total 
+FROM compra_det_view WHERE fac_cod=compra_cab_view.fac_cod
+GROUP BY fac_cod),0),',','.') AS total_iva_formato,
+
+
+            (CASE ape_cod WHEN 0 THEN 'Compras' WHEN 1 THEN 'Bonificaciones'  WHEN 2 THEN 'Devoluciones' WHEN 3 THEN 'Descuentos'  END)AS tipo_doc
+            from compra_cab_view where borrado='0' and fac_est='1' and 1=1 AND fecha >='2018-09-01' AND fecha <='2018-09-20' ORDER BY fecha asc

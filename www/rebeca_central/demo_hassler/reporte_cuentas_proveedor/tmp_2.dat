@@ -1,0 +1,1 @@
+SELECT * from compras_cab_view where borrado='0' and 1=1 ORDER BY fac_cod desc

@@ -1,0 +1,3 @@
+SELECT *  
+             
+            from ayudantes where borrado='0' and 1=1 ORDER BY ayu_des ASC

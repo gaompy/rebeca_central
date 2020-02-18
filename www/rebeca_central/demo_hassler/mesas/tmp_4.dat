@@ -1,0 +1,1 @@
+SELECT * from mesas where borrado='0' and mes_cod > 0 and 1=1 ORDER BY mes_des ASC

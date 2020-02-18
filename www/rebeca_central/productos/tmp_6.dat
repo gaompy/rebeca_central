@@ -1,0 +1,1 @@
+SELECT * from productos_view where borrado='0' and 1=1 AND pro_bar='7453038453271' ORDER BY pro_des ASC

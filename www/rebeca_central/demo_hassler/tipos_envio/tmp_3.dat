@@ -1,0 +1,1 @@
+SELECT * from tipo_envio where borrado='0' and 1=1 ORDER BY tie_des ASC

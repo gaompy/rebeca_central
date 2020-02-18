@@ -1,0 +1,2 @@
+SELECT *,(SELECT usuario FROM usuarios WHERE id=aper_cie_view.usuario) AS usu_des 
+             FROM aper_cie_view where borrado='0' and 1=1 ORDER BY ape_cod desc

@@ -1,0 +1,16 @@
+SELECT *,(SELECT usuario FROM usuarios WHERE id=factura_cab_view.usuario) AS usu_des,
+(SELECT pro_uti_tot FROM (SELECT fac_cod,SUM(pro_uti) AS pro_uti_tot FROM(SELECT *, pro_tot-pro_cos AS pro_uti FROM 
+(SELECT *,((SELECT pro_cos FROM productos WHERE pro_cod=factura_det.pro_cod)*pro_can) AS pro_cos 
+FROM factura_det WHERE borrado=0) AS tmp) AS tmp1
+GROUP BY fac_cod) AS tmp2
+WHERE fac_cod=factura_cab_view.fac_cod) AS pro_uti_gral,
+
+REPLACE(FORMAT((SELECT pro_uti_tot FROM (SELECT fac_cod,SUM(pro_uti) AS pro_uti_tot 
+FROM(SELECT *, pro_tot-pro_cos AS pro_uti FROM (SELECT *,
+((SELECT pro_cos FROM productos WHERE pro_cod=factura_det.pro_cod)*pro_can) AS pro_cos 
+FROM factura_det WHERE borrado=0) AS tmp) AS tmp1 GROUP BY fac_cod) AS tmp2 WHERE fac_cod=factura_cab_view.fac_cod),0),',','.') 
+AS pro_uti_gral_tmp
+
+
+
+FROM factura_cab_view WHERE borrado='0' and 1=1 ORDER BY fac_cod desc

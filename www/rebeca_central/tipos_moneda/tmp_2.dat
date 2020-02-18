@@ -1,0 +1,1 @@
+SELECT * from tipo_moneda where borrado='0' and 1=1 ORDER BY tmo_des ASC

@@ -1,0 +1,3 @@
+SELECT * ,
+(SELECT cli_des FROM clientes WHERE cli_cod=factura_cab.cli_cod) AS cli_des
+FROM factura_cab WHERE borrado='0' and fac_est='0' and usuario='2' and 1=1 ORDER BY fac_cod desc

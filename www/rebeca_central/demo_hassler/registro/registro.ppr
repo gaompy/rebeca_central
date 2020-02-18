@@ -1,0 +1,43 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultDir=C:\wamp\www\alpha-software-gratis\registro
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+registro
+	+registro
+		-lib
+			-formoid1
+				lib\formoid1\.htaccess
+				lib\formoid1\form.formoid
+				lib\formoid1\form.php
+				lib\formoid1\formoid.eot
+				lib\formoid1\formoid.svg
+				lib\formoid1\formoid.ttf
+				lib\formoid1\formoid.woff
+				lib\formoid1\formoid-default-skyblue.css
+				lib\formoid1\formoid-default-skyblue.js
+				lib\formoid1\handler.php
+				lib\formoid1\helpers.php
+				lib\formoid1\jquery.min.js
+				lib\formoid1\JSON.php
+				lib\formoid1\recaptchalib.php
+			lib\jquery.js
+			lib\jquery-ui.css
+			lib\jquery-ui.js
+		conectar.php
+		config.php
+		datos.sql
+		guardar.php
+		index.php
+[Open project files]
+[Selected Project Files]
+Main=

@@ -1,0 +1,2 @@
+SELECT *,(select suc_des from sucursales where suc_cod=depositos.suc_cod) as suc_des
+             from depositos where borrado='0' and 1=1 ORDER BY dep_des ASC

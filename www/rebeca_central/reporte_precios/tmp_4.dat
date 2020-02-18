@@ -1,0 +1,1 @@
+SELECT *,REPLACE(FORMAT(pde_ven,0),',','.') AS pde_ven_tmp from productos_det_view where borrado='0' and 1=1 ORDER BY pro_des ASC

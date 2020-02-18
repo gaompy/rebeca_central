@@ -1,0 +1,2 @@
+SELECT *, (SELECT COUNT(*) FROM factura_imp WHERE borrado='0' AND fac_cod=factura_cab_view.fac_cod) AS cuenta_factura  
+            FROM factura_cab_view WHERE borrado='0' and 1=1 AND fecha >='2018-12-01' AND fecha <='2018-12-05' ORDER BY fac_cod desc

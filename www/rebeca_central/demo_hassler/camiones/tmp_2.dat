@@ -1,0 +1,1 @@
+SELECT * from camiones where borrado='0' and 1=1 ORDER BY cam_des ASC

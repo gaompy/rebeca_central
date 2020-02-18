@@ -1,0 +1,8 @@
+SELECT *,
+              REPLACE(FORMAT(caj_ing,0),',','.') AS caj_ing_des,
+              REPLACE(FORMAT(caj_sal,0),',','.') AS caj_sal_des,
+              CASE caj_par  
+              WHEN 0 THEN 'Ingreso'  
+              WHEN 1 THEN 'Egreso'  
+              END AS caj_par_des
+              from caja_diaria where borrado='0' and 1=1 ORDER BY caj_cod ASC

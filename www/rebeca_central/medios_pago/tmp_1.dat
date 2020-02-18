@@ -1,0 +1,1 @@
+SELECT * from medios_pago where borrado='0' and 1=1 ORDER BY mpg_des ASC

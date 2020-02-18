@@ -1,0 +1,2 @@
+SELECT *, 
+(CASE prm_par WHEN 0 THEN 'No' WHEN 1 THEN 'Si' END)AS prm_par_des from promo_cab where borrado='0' and 1=1 ORDER BY prm_des ASC

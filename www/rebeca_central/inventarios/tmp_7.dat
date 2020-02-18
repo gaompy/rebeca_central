@@ -1,0 +1,5 @@
+SELECT inv_cod, inv_des, (CASE inv_par WHEN 0 THEN 'PENDIENTE' WHEN 1 THEN 'CONFIRMADO' WHEN 2 THEN 'AJUSTADO' END)AS inv_par,inv_fec,fecha, hora, usuario, borrado, 
+(SELECT SUM(pro_can * pro_cos) AS total FROM inventario_det
+WHERE borrado='0' AND fac_cod=inventario_cab.inv_cod
+GROUP BY fac_cod) AS total 
+FROM inventario_cab WHERE borrado='0' AND 1=1 ORDER BY inv_cod desc

@@ -1,0 +1,1 @@
+select * from inventarios_cab_view WHERE borrado='0' AND 1=1 ORDER BY inv_cod desc

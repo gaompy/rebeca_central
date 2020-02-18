@@ -1,0 +1,10 @@
+[16-Jul-2016 12:27:04 CST6CDT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/syspymes/public_html/syspymes/proveedores/guardar.php:13) in /home/syspymes/public_html/syspymes/proveedores/guardar.php on line 61
+[05-Dec-2018 10:38:43 America/Chicago] PHP Warning:  file(tmp_7.dat) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/cdoatoco/public_html/proveedores/excel.php on line 15
+[05-Dec-2018 10:38:43 America/Chicago] PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in /home/cdoatoco/public_html/proveedores/excel.php on line 15
+[05-Dec-2018 10:38:43 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cdoatoco/public_html/proveedores/excel.php on line 30
+[05-Dec-2018 10:38:50 America/Chicago] PHP Warning:  file(tmp_7.dat) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/cdoatoco/public_html/proveedores/excel.php on line 15
+[05-Dec-2018 10:38:50 America/Chicago] PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in /home/cdoatoco/public_html/proveedores/excel.php on line 15
+[05-Dec-2018 10:38:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cdoatoco/public_html/proveedores/excel.php on line 30
+[05-Dec-2018 10:39:24 America/Chicago] PHP Warning:  file(tmp_7.dat) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/cdoatoco/public_html/proveedores/excel.php on line 15
+[05-Dec-2018 10:39:24 America/Chicago] PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in /home/cdoatoco/public_html/proveedores/excel.php on line 15
+[05-Dec-2018 10:39:24 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cdoatoco/public_html/proveedores/excel.php on line 30

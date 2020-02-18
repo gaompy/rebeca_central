@@ -1,0 +1,1 @@
+SELECT * from tipo_cuenta where borrado='0' and 1=1 ORDER BY tcu_des ASC

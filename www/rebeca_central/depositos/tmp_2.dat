@@ -1,0 +1,1 @@
+SELECT * from depositos where borrado='0' and 1=1 ORDER BY dep_des ASC

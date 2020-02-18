@@ -1,0 +1,3 @@
+SELECT *,
+            (CASE tmo_par WHEN 0 THEN 'No' WHEN 1 THEN 'Si' END)AS tmo_par_des
+             from tipo_moneda where borrado='0' and 1=1 ORDER BY tmo_des ASC

@@ -1,0 +1,1 @@
+SELECT * from clientes_view where borrado='0' and 1=1 AND cli_des like '%BAR COMEDOR DOS FRONTERAS%' ORDER BY cli_des ASC

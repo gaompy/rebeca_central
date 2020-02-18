@@ -1,0 +1,1 @@
+SELECT * from cotizaciones_view where borrado='0' and 1=1 ORDER BY cot_cod desc

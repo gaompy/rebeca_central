@@ -1,0 +1,11 @@
+SELECT *,
+            (select cli_des from clientes where cli_cod=factura_cab.cli_cod) as cli_des,
+            (select ven_des from vendedores where usu_cod=factura_cab.usuario) as ven_des,
+            (SELECT SUM(pro_tot) 
+                FROM factura_det 
+                WHERE borrado='0' AND fac_cod=factura_cab.fac_cod) AS total,
+                            
+            (SELECT REPLACE(FORMAT(SUM(pro_tot),0),',','.') 
+                FROM factura_det 
+                WHERE borrado='0' AND fac_cod=factura_cab.fac_cod) AS total_format
+            FROM factura_cab WHERE borrado='0' and fac_est='0' and 1=1 ORDER BY fac_cod asc

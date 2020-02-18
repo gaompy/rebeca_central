@@ -1,0 +1,1 @@
+SELECT * from marcas where borrado='0' and 1=1 AND mar_des like '%po%' ORDER BY mar_des ASC

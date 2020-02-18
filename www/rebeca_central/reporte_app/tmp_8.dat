@@ -1,0 +1,4 @@
+SELECT *,
+            (select cli_des from clientes where cli_cod=factura_cab.cli_cod) as cli_des,
+            (select mes_des from mesas where mes_cod=factura_cab.mes_cod) as caja
+            FROM factura_cab WHERE borrado='0' and fac_est='0' and 1=1 AND fecha >='2019-06-01' AND fecha <='2019-06-18' ORDER BY fac_cod asc

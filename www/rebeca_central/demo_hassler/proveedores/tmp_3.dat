@@ -1,0 +1,1 @@
+SELECT * from proveedores where borrado='0' and 1=1 ORDER BY prv_des ASC

@@ -1,0 +1,1 @@
+SELECT * from info where borrado='0' and 1=1 ORDER BY inf_des ASC

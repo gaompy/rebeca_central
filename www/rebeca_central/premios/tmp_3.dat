@@ -1,0 +1,5 @@
+SELECT *, 
+(SELECT cli_des FROM factura_cab_view WHERE fac_cod=promo_cab.fac_cod) AS cli_des, 
+(SELECT fecha FROM factura_cab_view WHERE fac_cod=promo_cab.fac_cod) AS fecha, 
+(SELECT fac_tot_1 FROM factura_cab_view WHERE fac_cod=promo_cab.fac_cod) AS monto,(CASE prm_est WHEN 0 THEN 'Pendiente' WHEN 1 THEN 'Sorteado' END)AS prm_par_des  
+FROM promo_cab WHERE borrado='0' and 1=1 AND prm_des like '%heref%' ORDER BY prm_des ASC

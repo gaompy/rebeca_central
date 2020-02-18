@@ -1,0 +1,1 @@
+SELECT * from movimientos_view where borrado='0' and 1=1 AND mov_fec >='2015-07-23' AND mov_fec <='2015-07-23' ORDER BY mov_cod desc
